@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:elevation="@dimen/_3sdp"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@mipmap/ic_launcher"
+
+            android:id="@+id/img1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cake_name"
+            android:textStyle="bold"
+            android:text="Cake_Name"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/choco"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cake_description"
+            android:textSize="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Cake_Description"
+            android:layout_below="@+id/cake_name"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cake_price"
+            android:text="Cake_Price"
+            android:layout_below="@+id/cake_description"
+            android:layout_toRightOf="@+id/img1"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

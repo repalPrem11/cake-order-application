@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDE0E5"
+    tools:context=".SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#002F6D">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/settings_close_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/settings_update_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                   android:layout_marginLeft="270dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_bar_settings"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/profile_image"/>
+
+    <TextView
+        android:id="@+id/settings_change_profile_image_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_profile_image"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Change Profile"
+        android:textColor="#FF99CC"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/settings_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/settings_change_profile_image_btn"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Phone number...."
+        android:inputType="number"
+        android:textColor="#002F6D"
+        android:layout_margin="15dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/settings_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/settings_phone_number"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Full name...."
+        android:textColor="#002F6D"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/settings_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/settings_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Address...."
+        android:layout_margin="15dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/security_question"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/settings_name"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttons"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="Set Security Questions"
+        app:backgroundTint="#FF99CC" />
+
+
+
+
+</RelativeLayout>

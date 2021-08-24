@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="admin.AdminCategory">
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Add new products"
+        android:textColor="#00FFFF"
+        android:textSize="34dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/white_forest_cake"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/white_cake" />
+
+
+        <ImageView
+            android:id="@+id/black_forest_cake"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/black_forest" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_category_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/kit_kat_cake"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/kitkat_cake" />
+
+        <ImageView
+            android:id="@+id/photo_cake"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/photo_ccakee" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/flevoured_cake"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/flevoured_cake" />
+
+        <ImageView
+            android:id="@+id/fondent_cake"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/fondent_cake" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3_category_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/annivarsary_cake"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/annivarsery_cake" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

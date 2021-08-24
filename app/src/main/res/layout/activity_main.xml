@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDE0E5"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/splash"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:textStyle="bold"
+        android:textColor="#FF99CC"
+        android:textSize="20sp"
+        android:text="Delivering the sweetest moments!"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

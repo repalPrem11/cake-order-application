@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrder">
+
+
+    <TextView
+
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Shipment Details"
+        android:textAlignment="center"
+        android:textColor="#002F6D"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_text_cake_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter message on cake"/>
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_cake_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Name"/>
+
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_name"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:hint="Your Phone number"/>
+
+    <EditText
+        android:id="@+id/edit_text_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:hint="Your Home Address"/>
+
+
+    <EditText
+        android:id="@+id/edit_text_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:hint="Your City Name"/>
+
+
+    <Button
+        android:id="@+id/confirm_order_btn"
+        android:layout_width="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Confirm Order"
+        android:textAllCaps="false"
+        app:backgroundTint="#FF99CC"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/edit_text_city"
+        android:src="@drawable/delivarymain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>

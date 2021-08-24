@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_container"
+    tools:context=".ContactActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get in touch with us"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#002F6D"/>
+
+
+
+    <ImageView
+        android:id="@+id/call_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/watsapp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+        android:id="@+id/number_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/call_image"
+        android:layout_marginLeft="5dp"
+        android:text="9011375321"
+        android:layout_marginTop="130dp"
+
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textStyle="normal"/>
+
+    <ImageView
+        android:id="@+id/mao_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/call_image"
+        android:src="@drawable/maps"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="17sp"/>
+
+    <TextView
+        android:id="@+id/location_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mao_image"
+        android:text="Tap to get our location"
+        android:layout_below="@id/number_textview"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/design_default_color_primary_dark"/>
+
+    <ImageView
+        android:id="@+id/cell_call"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/mao_image"
+        android:src="@drawable/ic_baseline_call_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="17sp"/>
+
+    <TextView
+        android:id="@+id/call_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cell_call"
+        android:text="9011375321"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:layout_below="@+id/location_TV"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/note_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_TV"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginRight="20dp"
+        android:text="You can also take your cake order at our shop, for our shop address you can tap on the above link "
+        android:textSize="12dp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mao_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="200dp"
+        android:text="Note:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/note_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/insta"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/note_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/watsapp"/>
+
+
+
+
+
+</RelativeLayout>

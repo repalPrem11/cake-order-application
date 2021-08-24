@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "335569638277",
+    "project_id": "cake-order-38e60",
+    "storage_bucket": "cake-order-38e60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335569638277:android:b5864c52d59dde5829eaec",
+        "android_client_info": {
+          "package_name": "com.example.cakeorderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335569638277-63fq643nj0b508j10c4fkthl5ff6u5cf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cakeorderapp",
+            "certificate_hash": "0b63be7e448a816bd2173a59d0baf12b1d60fc03"
+          }
+        },
+        {
+          "client_id": "335569638277-dfde79cfeh367ie2tn66s280i07o22po.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKOi-MxoAlJsPo0vx1lJ2-o2X2ygJzKXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335569638277-dfde79cfeh367ie2tn66s280i07o22po.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item android:id="@+id/check_orders"
+            android:icon="@drawable/checkorder"
+            android:title="Check Orders"
+            app:showAsAction="ifRoom"
+
+            />
+
+    <item android:id="@+id/edit_product"
+        android:title="Maintain Product"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_edit_24"/>
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout"
+        android:iconTint="#ffffff"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

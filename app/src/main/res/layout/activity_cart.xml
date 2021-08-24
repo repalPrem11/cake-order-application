@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".CartActivity">
+    
+    <RelativeLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price :"
+            android:padding="5dp"
+            android:textColor="#F31F02"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+             />
+
+        <ImageView
+            android:id="@+id/refresh_image"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/total_price"
+            android:src="@drawable/refresh"
+            android:layout_marginLeft="60dp"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/congo_img_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/fig2"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/congo_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations your order has been successfully placed.Soon it will be Delievered."
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:textColor="#002F6D"
+        android:layout_below="@+id/congo_img_tv"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        android:layout_below="@+id/first_layout"
+        android:layout_above="@+id/next_btn"/>
+
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="#FF99CC"
+        android:text="Next"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>
+
+

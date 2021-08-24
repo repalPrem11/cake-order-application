@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_first"
+    tools:context=".ProductDetailsActivity">
+
+
+
+    <ImageView
+        android:id="@+id/product_image_details"
+        android:layout_width="match_parent"
+        android:cropToPadding="false"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/product_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_image_details"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:text="Product Name"
+        android:layout_marginLeft="10dp"
+        android:textColor="#002F6D"/>
+
+    <TextView
+        android:id="@+id/product_description_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name_details"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:text="Product Description"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FF99CC"/>
+
+    <TextView
+        android:id="@+id/product_price_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_description_details"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_marginRight="250dp"
+        android:textStyle="bold"
+        android:text="Product Price"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FF99CC"/>
+
+
+    <ImageView
+        android:id="@+id/cart_image_details"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/product_price_details"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/cart"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/cart_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cart_image_details"
+        android:layout_below="@+id/product_price_details"
+        android:layout_marginTop="18sp"
+        android:textSize="12dp"
+        android:textColor="#FF0000"
+        android:text="Please, place your order before 10 hours of your celebration."
+        android:layout_toRightOf="@+id/cart_image_details"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/KG_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_notice"
+        android:layout_marginTop="10dp"
+        android:text="KG:"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:textColor="#002F6D"/>
+
+
+
+
+
+
+   
+
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/KG_details"
+    android:layout_toRightOf="@+id/KG_details"
+    android:id="@+id/radio_grp">
+
+
+    <RadioButton
+        android:id="@+id/one_radio_button_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_notice"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/KG_details"
+        android:layout_marginTop="20dp"
+
+        android:text="1" />
+
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/two_radio_button_details"
+        android:layout_below="@+id/cart_notice"
+        android:layout_toRightOf="@+id/one_radio_button_details"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+       />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/three_radio_button_details"
+        android:layout_below="@+id/cart_notice"
+        android:layout_toRightOf="@+id/two_radio_button_details"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/four_radio_button_details"
+        android:layout_below="@+id/cart_notice"
+        android:layout_toRightOf="@+id/three_radio_button_details"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"/>
+
+</RadioGroup>
+
+    <Button
+        android:id="@+id/save_cart_btn_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_grp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="70dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Add to cart"
+        app:backgroundTint="#FF99CC" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:id="@+id/contact_us_details"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Contact Us"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#002F6D"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
